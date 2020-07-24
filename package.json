@@ -2,15 +2,11 @@
   "name": "todo-app",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Jeremy Kithome <jeremy.kithome@andela.com>",
   "private": true,
   "scripts": {
     "start": "npm run build && http-server dist",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
